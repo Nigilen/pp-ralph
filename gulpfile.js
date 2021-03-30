@@ -11,6 +11,7 @@ let del = require('del');
 // таск перевода sass в css. Части файлов нчинаются с underscore
 gulp.task('sass', async function() {
   return gulp.src('app/sass/**/*.sass')
+          .pipe(sass().on('error', sass.logError))
           .pipe(sass())
           .pipe(gulp.dest('app/css'))
           .pipe(browserSync.reload({stream: true})) // обновление css на странице при изминениях
