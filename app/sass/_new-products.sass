@@ -1,0 +1,102 @@
+.container--new-items
+  padding: 0px 16px 80px 16px
+  
+.wrapper--new-items
+  display: grid
+  grid-template-rows: auto
+
+.section-title
+  position: relative
+  font-size: 20px
+  text-transform: uppercase
+  font-family: Playfair Display
+  font-weight: 600
+  letter-spacing: 1.5px
+  margin-bottom: 53px
+  &::after
+    content: ""
+    position: absolute
+    bottom: -15px
+    left: 0
+    width: 90px
+    height: 4px
+    background-color: #303032
+
+.new-items-list
+  display: grid
+  grid-template-columns: repeat(auto-fit, 288px)
+  justify-content: center
+  column-gap: 30px
+
+.new-item
+  background-color: #ffffff
+  display: grid
+  justify-items: center
+  padding-bottom: 16px
+  grid-template-rows: 70% 35px 45px
+  margin-bottom: 30px
+  max-width: 288px
+
+  color: #303032
+  font-family: Open Sans
+  transition-duration: .4s
+  &:hover
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &--brule
+    background-color: #FAECE9
+
+dd
+  margin: 0
+
+
+.new-item__title
+  font-size: 20px
+  font-weight: 400
+  margin-bottom: 7px
+  align-self: center
+  text-align: center
+  
+
+.new-item__price
+  font-weight: 600
+  font-size: 28px
+  align-self: center
+  padding-bottom: 16px
+
+.new-item__img
+  order: -1
+  display: grid
+  & img
+    margin: auto 0
+
+@media screen and ( min-width: 1000px )
+  .container--new-items
+    padding: 0px 127px 80px 127px
+
+  .section-title--new-items
+    position: absolute
+
+  .new-item
+    max-width: 100%
+    margin: 0
+    padding: 0
+    grid-template-rows: auto 35px 45px
+
+  .new-items-list
+    grid-template-areas: " . firstCard bigCard bigCard" "secondCard thirdCard bigCard bigCard"
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    grid-gap: 37px 30px
+
+  .new-item--first
+    grid-area: firstCard
+  .new-item--second
+    grid-area: secondCard
+  .new-item--third
+    grid-area: thirdCard
+  .new-item--big
+    grid-area: bigCard
+    grid-template-rows: auto 65px 60px
+    
+  .new-item__img
+    align-self: center

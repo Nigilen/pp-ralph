@@ -4,21 +4,236 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/outliner.css"> -->
     <link rel="stylesheet" href="/css/style.css">
     <title>Дизайнерская мебель | Ralph</title>
   </head>
   <body>
     <header class="header">
-      <div class="box content-box"></div>
-      <div class="box border-box"></div>
+
+      <div class="header-container">
+
+        <div class="header-wrapper">
+          
+          <a class="logo" href="#">
+            <img src="img/logo.svg" width="20" height="20" alt="Логотип Ralph">
+          </a>
+          <nav class="nav">
+            <button class="button button-burger " type="button"></button>
+            <ul class="nav-site">
+              <li class="nav-site__item">
+                <a class="nav-site__link" href="#">Мебель</a>
+              </li>
+              <li class="nav-site__item">
+                <a class="nav-site__link" href="#">Освещение</a>
+              </li>
+              <li class="nav-site__item">
+                <a class="nav-site__link" href="#">Стиль</a>
+              </li>
+            </ul>
+            <ul class="nav-user">
+              <li>
+                <button type="button" class="button button--search"></button>
+              </li>
+              <li>
+                <button type="button" class="button button--cart"></button>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
     </header>
+
     <main class="main">
-      <h1 class=""></h1>
+      <section class="promo">
+        <div class="container--promo">
+          <div class="wrapper--promo">  
+            <div class="column-content">
+              <p class="promo-category">Дизайнерская мебель</p>
+              <div class="promo-description">
+                <h3 class="item-title">Кресло "Антиква"</h3>
+                <p class="item-price">
+                  $380<span>$240</span>
+                </p>
+                <a class="button button--buy" href="#">Купить</a>
+              </div>
+            </div>
+            <picture class="promo-picture">
+              <source media="(max-width: 1001px)" srcset="/img/chair-antikva-mob.jpg">
+              <img class="promo-img" src="/img/chair-antikva.jpg" alt="Кресло Антиква">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="new-items">
+        <div class="container--new-items">
+          <div class="wrapper--new-items">
+            <h2 class="section-title section-title--new-items">Новинки</h2>
+            <dl class="new-items-list">
+              <a class="new-item new-item--first" href="#">
+                <dt class="new-item__title">Стул «Смеркается»</dt>
+                <dd class="new-item__img"><img src="/img/chair-smerkaetsia.png" alt="Стул «Смеркается»"></dd>
+                <dd class="new-item__price">$280</dd>
+              </a>
+              <a class="new-item new-item--brule  new-item--second" href="#">
+                <dt class="new-item__title">Люстра «Облако»</dt>
+                <dd class="new-item__img"><img src="/img/stol-brule.png" alt="Люстра «Облако»"></dd>
+                <dd class="new-item__price">$280</dd>
+              </a>
+              <a class="new-item new-item--third" href="#">
+                <dt class="new-item__title">Стол «Крем брюле»</dt>
+                <dd class="new-item__img"><img src="/img/lustra-oblako.png" alt="Стол «Крем брюле»"></dd>
+                <dd class="new-item__price">$280</dd>
+              </a>
+              <a class="new-item new-item--big" href="#">
+                <dt class="new-item__title">Стул офисный «Белый шоколад»</dt>
+                <dd class="new-item__img">
+                  <picture>
+                    <source media="(min-width: 1001px)" srcset="img/stul-chockolad-big.png">
+                    <img src="/img/stul-brule.png" alt="Стул офисный «Белый шоколад»">
+                  </picture>
+                </dd>
+                <dd class="new-item__price">$280</dd>
+              </a>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-reviews">
+        <h2 class="visuality-hidden"></h2>
+        <div class="container--reviews">
+          <div class="wrapper--reviews">
+            <ul class="reviews-list">
+              <li class="reviews-item">
+                <img class="review-img" src="/img/rewievs-elena.png" alt="Елена Новикова">
+                <p class="review-name">Елена Новикова</p>
+                <p class="review-status">cтудентка</p>
+                <p class="review-description">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+                  заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
+              </li>
+              <li class="reviews-item">
+                <img class="review-img" src="/img/rewievs-elena.png" alt="Елена Новикова">
+                <p class="review-name">Елена Новикова</p>
+                <p class="review-status">cтудентка</p>
+                <p class="review-description">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+                  заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
+              </li>
+              <li class="reviews-item">
+                <img class="review-img" src="/img/rewievs-elena.png" alt="Елена Новикова">
+                <p class="review-name">Елена Новикова</p>
+                <p class="review-status">cтудентка</p>
+                <p class="review-description">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+                  заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
+              </li>
+              <li class="reviews-item">
+                <img class="review-img" src="/img/rewievs-elena.png" alt="Елена Новикова">
+                <p class="review-name">Елена Новикова</p>
+                <p class="review-status">cтудентка</p>
+                <p class="review-description">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+                  заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
+              </li>
+            </ul>
+            <ul class="controls-list">
+              <li class="control-item active-control"></li>
+              <li class="control-item"></li>
+              <li class="control-item"></li>
+              <li class="control-item"></li>
+            </ul>
+            <div class="reviews-contorls">
+              <button class="button control-button control-button-left"></button>
+              <button class="button control-button control-button-right"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-stock">
+        <div class="container-stock">
+          <h2 class="section-title">Последний шанс</h2>
+          <div class="wrapper-stock">
+            <ul class="categories-list">
+              <li class="categories-item categories-item--active">Стулья</li>
+              <li class="categories-item">Диваны</li>
+              <li class="categories-item">Кресла</li>
+            </ul>
+            <ul class="products-list">
+              <li class="product-item">
+                <p class="product-item-title">Стул «Карамель»</p>
+                <p class="product-item-price">$195<span class="product-item-old-price">$245</span></p>
+                <img class="product-item-img" src="/img/stul-karamel.png" alt="">
+                <button type="button" class="button button--buy product-button">Купить</button>
+              </li>
+              <li class="product-item">
+                <p class="product-item-title">Стул «Карамель»</p>
+                <p class="product-item-price">$195<span class="product-item-old-price">$245</span></p>
+                <img class="product-item-img" src="/img/stul-karamel.png" alt="">
+                <button type="button" class="button button--buy product-button">Купить</button>
+              </li>
+              <li class="product-item">
+                <p class="product-item-title">Стул «Карамель»</p>
+                <p class="product-item-price">$195<span class="product-item-old-price">$245</span></p>
+                <img class="product-item-img" src="/img/stul-karamel.png" alt="">
+                <button type="button" class="button button--buy product-button">Купить</button>
+              </li>
+              <li class="product-item">
+                <p class="product-item-title">Стул «Карамель»</p>
+                <p class="product-item-price">$195<span class="product-item-old-price">$245</span></p>
+                <img class="product-item-img" src="/img/stul-karamel.png" alt="">
+                <button type="button" class="button button--buy product-button">Купить</button>
+              </li>
+              <li class="product-item">
+                <p class="product-item-title">Стул «Карамель»</p>
+                <p class="product-item-price">$195<span class="product-item-old-price">$245</span></p>
+                <img class="product-item-img" src="/img/stul-karamel.png" alt="">
+                <button type="button" class="button button--buy product-button">Купить</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
     </main>
     <footer class="footer">
-
+      <div class="container--footer">
+        <div class="wrapper--footer">
+          <a class="logo logo-footer" href="#">
+            <img src="img/logo.svg" width="20" height="20" alt="Логотип Ralph">
+          </a>
+          <ul class="footer-user-nav">
+            <li class="footer-user-nav-item">
+              <a class="footer-user-nav-link phone-link" href="tel:74959152133">+7 (495) 915-21-33</a>
+            </li>
+            <li class="footer-user-nav-item">
+              <a class="footer-user-nav-link mail-link" href="mailto:info@ralph.com">info@ralph.com</a>
+            </li>
+          </ul>
+          <ul class="footer-site-nav">
+            <li class="footer-site-nav-item">
+              <a class="footer-site-nav-link" href="#">Доставка</a>
+            </li>
+            <li class="footer-site-nav-item">
+              <a class="footer-site-nav-link" href="#">Оплата</a>
+            </li>
+            <li class="footer-site-nav-item">
+              <a class="footer-site-nav-link" href="#">Контакты</a>
+            </li>
+            <li class="footer-site-nav-item">
+              <a class="footer-site-nav-link" href="#">Гарантии</a>
+            </li>
+          </ul>
+          <p class="footer-bottom">
+            © 2021 «Ralph» — Сайт по продаже дизайнерской мебели. Все права защищены.
+          </p>
+        </div>
+      </div>
+      
     </footer>
-    <script src="/app/js/common.js"></script>
+    <script src="/js/common.js"></script>
   </body>
 </html>

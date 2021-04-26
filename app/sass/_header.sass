@@ -1,0 +1,135 @@
+.header
+  position: fixed
+  z-index: 10
+  width: 100%
+  max-width: 1440px
+  &-container
+    padding: 20px 16px 17px 16px
+    transition-duration: .3s
+    background-color: transparent
+    &--scroll
+      padding: 15px 16px 12px 16px
+      box-shadow: 0 -25px 30px 0px #000000
+      background-color: #ffffff
+  &-wrapper
+    display: grid
+    grid-template-columns: auto minmax(20%, 134px)
+    justify-content: space-between
+  
+.nav
+  display: grid
+  grid-template-columns: auto auto
+  justify-content: space-between
+  &-site
+    position: absolute
+    z-index: 1
+    left: 100%
+    top: 0
+    display: grid
+    width: 100vw
+    height: 100vh
+    place-content: center
+    place-items: center
+    row-gap: 65px
+    font-size: 18px
+    text-transform: uppercase
+    letter-spacing: 3px
+    background-color: #313131 
+    color: #ffffff
+    transition-duration: .5s
+    &--show
+      left: 0
+
+  &-user
+    order: -1
+    display: grid
+    grid-template-columns: auto auto
+    column-gap: 20.43px
+    align-content: start
+
+.button-burger
+  position: relative
+  z-index: 3
+  width: 25px
+  cursor: pointer
+  transition-duration: .4s
+  &--open-menu
+    filter: invert(1)
+  &:after
+    content: ""
+    position: absolute
+    top: 3px
+    left: 0
+    width: 100%
+    height: 2px
+    background-color: #000000
+    box-shadow: 0 7.5px 0 0 #000000, 0 15px 0 0 #000000 
+
+.button--search
+  display: grid
+  width: 23px
+  height: 24px
+  background: url('/img/search.svg') center 100% no-repeat
+
+.button--cart
+  position: relative
+  display: grid
+  width: 19.22px
+  height: 22.56px
+  background: url('/img/bag.svg') center 100% no-repeat
+  &:after
+    content: "3"
+    position: absolute
+    top: 0
+    right: -8.35px
+    display: grid
+    width: 15px
+    height: 15px
+    place-items: center
+    font-size: 11px
+    line-height: 1px
+    border-radius: 50%
+    background-color: #313131
+    color: #fff
+
+
+
+@media screen and ( min-width: 1024px )
+  .button-burger
+    display: none
+  
+  .header-container
+    padding: 85px 135px
+    &--scroll
+      padding: 20px 135px
+      box-shadow: 0 -5px 30px -25px #000000
+      background-color: #ffffff
+    
+  .header-wrapper
+    display: grid
+    grid-template-columns: minmax(min-content, 152px) auto
+    justify-content: stretch
+    align-items: center
+
+  .nav-site
+    position: static
+    display: grid
+    width: auto
+    height: auto
+    grid-template-columns: repeat(3, auto)
+    column-gap: 50px
+    row-gap: 0
+    background-color: transparent
+    color: #313131
+    font-size: 14px
+    &__link
+      padding: 5px
+      text-transform: uppercase
+
+  .nav-user
+    order: 0
+    align-content: center
+
+  .logo
+    padding: 5px
+    max-width: 20px

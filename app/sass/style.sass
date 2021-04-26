@@ -1,16 +1,55 @@
-.box
-  padding: 20px
-  margin: 20px
-  width: 40px
-  height: 40px
+// FONTS
+  
+@font-face
+  font-family: AvenirNext
+  src: url('/fonts/AvenirNextCyr-Regular.woff')
+  font-style: normal
+  font-weight: 400
 
-.content-box 
-  box-sizing: content-box
-  background-color: tomato
-  border: 1px solid black
+@font-face
+  font-family: AvenirNext
+  src: url('/fonts/AvenirNextCyr-Demi.woff')
+  font-style: normal
+  font-weight: 600
 
-.border-box 
-  box-sizing: border-box
-  background-color: tomato
-  border: 1px solid black
+// BASE STYLES
 
+html, body
+  transition-duration: 1s
+  position: relative
+  font-family: AvenirNext
+  font-weight: 400
+  margin: 0
+  background-color: #F9FDFF
+
+body
+  max-width: 1440px
+  margin: 0 auto
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+a
+  display: block
+  color: inherit
+  text-decoration: inherit
+
+img
+  display: block
+  max-width: 100%
+
+.button
+  padding: 0
+  border: none
+  outline: none
+  background-color: transparent
+  cursor: pointer
+
+@import _header.sass
+@import _promo.sass
+@import _new-products.sass
+@import _reviews.sass
+@import _stock.sass
+@import _footer.sass
