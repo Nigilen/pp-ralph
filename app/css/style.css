@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: AvenirNext;
   src: url("/fonts/AvenirNextCyr-Regular.woff");
@@ -639,3 +640,5 @@ dd {
     grid-area: bottom; }
   .wrapper--footer {
     grid-template-areas: "logo siteNav" "userNav ." "bottom bottom"; } }
+=======
+>>>>>>> a4661eb1c248260d5d4623bb2f288d907b7c0162
