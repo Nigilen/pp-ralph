@@ -1,0 +1,98 @@
+.section-stock
+  background: none
+
+.container-stock
+  padding: 0px 16px 80px 16px
+  
+.categories-list
+  display: grid
+  font-size: 16px
+  max-width: 100%
+  grid-template-columns: repeat(auto-fit, 70px)
+  justify-content: space-between
+  margin-bottom: 20px
+
+.categories-item
+  cursor: pointer
+  &--active
+    font-weight: 600
+    text-decoration: underline
+    text-decoration-thickness: 1px
+    text-underline-offset: 2px
+
+
+.product-item
+  position: relative
+  padding: 31px 0 0 23px
+  background-color: #ffffff
+  max-width: 100%
+  border-top: 5px solid transparent
+  transition-duration: .5s
+  cursor: pointer
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  height: 319px
+  display: grid
+
+.product-item-title
+  font-size: 16px
+  margin: 0
+  color: #000000
+
+.product-item-price
+  margin: 0
+  font-size: 28px
+  font-weight: 600
+  color: #303032
+
+.product-item-old-price
+  font-size: 16px
+  color: #979798
+  text-decoration: line-through
+  font-weight: 400
+  margin-left: 11px
+
+.product-item-img
+  align-self: end
+  justify-self: end
+
+.product-item:hover .product-button
+  bottom: -40px
+  opacity: 1
+
+.product-item:hover
+  border-top: 5px solid #303032
+  box-shadow: 2px 2px 30px rgba(56, 54, 53, 0.2);
+
+.product-button
+  position: absolute
+  opacity: 0
+  left: 0
+  bottom: -15%
+  width: 100%
+  transition-duration: .5s
+
+.products-list
+  display: grid
+  grid-template-columns: repeat(5, 100%)
+  overflow-x: hidden
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  
+  
+@media screen and ( min-width: 1000px )
+  .section-stock
+    background-image: url('/img/stock-bg.svg')
+    background-repeat: no-repeat
+
+  .container-stock
+    padding: 73px 127px 80px 127px
+
+  .categories-list 
+    column-gap: 50px
+    margin-bottom: 25px
+    justify-content: start
+
+  .products-list
+    grid-template-columns: repeat(auto-fit, 209px)
+    column-gap: 30px
+    row-gap: 30px
+    overflow: visible
