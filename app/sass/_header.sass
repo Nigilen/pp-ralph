@@ -1,0 +1,129 @@
+.container
+  padding: 20px 16px 17px 16px
+
+.wrapper-header
+  display: grid
+  grid-template-columns: 1fr minmax(20%, 134px)
+  justify-content: space-between
+
+.header
+  position: fixed
+  width: 100%
+
+.nav
+  display: grid
+  grid-template-columns: auto auto
+  justify-content: space-between
+
+  &-site
+    position: absolute
+    left: 100%
+    top: 0
+    z-index: 1
+    display: grid
+    width: 100vw
+    height: 100vh
+    place-content: center
+    place-items: center
+    row-gap: 65px
+    font-size: 18px
+    text-transform: uppercase
+    letter-spacing: 3px
+    background-color: #313131 
+    color: #ffffff
+    transition-duration: .5s
+    &--show
+      left: 0
+
+  &-user
+    order: -1
+    display: grid
+    grid-template-columns: auto auto
+    column-gap: 20.43px
+    align-content: start
+
+.button-burger
+  position: relative
+  z-index: 3
+  width: 25px
+  cursor: pointer
+  transition-duration: .4s
+  &--open-menu
+    filter: invert(1)
+  &:after
+    content: ""
+    position: absolute
+    top: 3px
+    left: 0
+    width: 100%
+    height: 2px
+    background-color: #000000
+    box-shadow: 0 7.5px 0 0 #000000, 0 15px 0 0 #000000 
+
+.button--search
+  display: grid
+  width: 23px
+  height: 24px
+  background: url('/img/search.svg') center 100% no-repeat
+
+.button--cart
+  position: relative
+  display: grid
+  width: 19.22px
+  height: 22.56px
+  background: url('/img/bag.svg') center 100% no-repeat
+  &:after
+    content: "3"
+    position: absolute
+    top: 0
+    right: -8.35px
+    display: grid
+    width: 15px
+    height: 15px
+    place-items: center
+    font-size: 11px
+    line-height: 1px
+    border-radius: 50%
+    background-color: #313131
+    color: #fff
+
+
+
+@media screen and ( min-width: 1024px )
+  .wrapper-header
+    display: grid
+    grid-template-columns: minmax(min-content, 152px) auto
+    justify-content: stretch
+    align-items: center
+
+  .nav-site
+    position: static
+    display: grid
+    width: auto
+    height: auto
+    grid-template-columns: repeat(3, auto)
+    column-gap: 50px
+    row-gap: 0
+    background-color: transparent
+    color: #313131
+    font-size: 14px
+
+  .nav-user
+    order: 0
+
+  .button-burger
+    display: none
+
+  .container
+    padding: 85px 135px
+
+  .nav-site__link
+    padding: 5px
+    text-transform: uppercase
+
+  .nav-user
+    align-content: center
+
+  .logo
+    padding: 5px
+    max-width: 20px

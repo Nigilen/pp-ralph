@@ -1,2 +1,11 @@
-body {
-  background-color: lightgreen; }
+@font-face {
+  font-family: AvenirNext;
+  src: url("/fonts/AvenirNextCyr-Regular.woff");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: AvenirNext;
+  src: url("/fonts/AvenirNextCyr-Demi.woff");
+  font-style: normal;
+  font-weight: 600; }

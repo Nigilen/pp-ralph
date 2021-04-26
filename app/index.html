@@ -4,39 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/outliner.css"> -->
     <link rel="stylesheet" href="/css/style.css">
     <title>Дизайнерская мебель | Ralph</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <img src="" alt="Логотип | Ральф" class="logo__img">
-      </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#" class="nav-link">Мебель</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Освещение</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Текстиль</a>
-          </li>
-        </ul>
-        <div class="user-list">
-          <button class="user-item search" type="button">Search</button>
-          <button class="user-item cart" type="button">Cart</button>
-        </div>
-      </nav>
-    </header>
-    <main class="main">
-      <h1 class=""></h1>
 
+      <div class="container">
+
+        <div class="wrapper-header">
+          
+          <a class="logo" href="#">
+            <img src="img/logo.svg" width="20" height="20" alt="Логотип Ralph">
+          </a>
+          <nav class="nav">
+            <button class="button button-burger " type="button"></button>
+            <ul class="nav-site">
+              <li class="nav-site__item">
+                <a class="nav-site__link" href="#">Мебель</a>
+              </li>
+              <li class="nav-site__item">
+                <a class="nav-site__link" href="#">Освещение</a>
+              </li>
+              <li class="nav-site__item">
+                <a class="nav-site__link" href="#">Стиль</a>
+              </li>
+            </ul>
+            <ul class="nav-user">
+              <li>
+                <button type="button" class="button button--search"></button>
+              </li>
+              <li>
+                <button type="button" class="button button--cart"></button>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <main class="main">
+      <section class="promo">
+        <div class="container--promo">
+          <div class="wrapper--promo">  
+            <div class="column-content">
+              <p class="promo-category">Дизайнерская мебель</p>
+              <div class="promo-description">
+                <h3 class="item-title">Кресло "Антиква"</h3>
+                <p class="item-price">
+                  $380<span>$240</span>
+                </p>
+                <a class="button button--buy" href="#">Купить</a>
+              </div>
+            </div>
+            <picture class="promo-picture">
+              <source media="(max-width: 1001px)" srcset="/img/chair-antikva-mob.jpg">
+              <img class="promo-img" src="/img/chair-antikva.jpg" alt="Кресло Антиква">
+            </picture>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
 
     </footer>
-    <script src="/app/js/common.js"></script>
+    <script src="/js/common.js"></script>
   </body>
 </html>
