@@ -1,7 +1,7 @@
-.container--promo
+.promo-container
   padding: 64px 0 80px 0
 
-.wrapper--promo
+.promo-wrapper
   display: grid
 
 .promo-picture
@@ -9,31 +9,31 @@
   justify-self: end
   margin-bottom: 20px
 
-.column-content
+.promo-content
   padding: 0 16px
 
-.promo-category
-  font-size: 27px
-  color: #303032
-  font-family: "Playfair Display"
-  text-transform: uppercase
+.content-category
+  margin: 0 0 20px 0
   font-weight: 600
   line-height: 170%
   letter-spacing: 1.5px
-  margin: 0 0 20px 0
+  font-size: 27px
+  font-family: "Playfair Display"
+  text-transform: uppercase
+  color: #303032
 
 .item-title
+  margin-bottom: 5px
   font-size: 20px
   font-family: Open Sans
   font-weight: 200
-  margin-bottom: 5px
 
 .item-price
+  margin-top: 0
+  margin-bottom: 30px
   font-size: 20px
   font-family: Open Sans
   font-weight: 400
-  margin-top: 0
-  margin-bottom: 30px
   
   & span
     margin-left: 22px
@@ -52,20 +52,20 @@
   
   
 @media screen and ( min-width: 1000px )    
-  .container--promo
+  .promo-container
     padding: 0px 135px
     background: linear-gradient(to right, #F9FDFF 70%, #FCEAE8 30%)
 
-  .wrapper--promo
+  .promo-wrapper
     display: grid
     grid-template-areas: "content img"
 
-  .column-content
+  .promo-content
     grid-area: content
     margin: 235px 21px 156px 0px
     width: 545px
 
-  .promo-category
+  .content-category
     font-size: 57px
     color: #303032
     font-family: "Playfair Display"
@@ -75,8 +75,6 @@
     letter-spacing: 3px
     margin: 0 0 35px 0
 
-  .promo-description
-
   .promo-picture
     order: 0
     justify-self: stretch
@@ -85,6 +83,7 @@
   .promo-img
     grid-area: img
     height: 100%
+    max-width: min-content
 
   .item-title
     font-size: 20px
